@@ -1,0 +1,11 @@
+<template name="MailChimpLists">
+{{#if lists}}
+	<ul>
+		{{#each lists.data}}
+			{{> MailChimpListsItem}}
+		{{/each}}
+	</ul>
+{{else}}
+	{{> MailChimpListsLoader}}
+{{/if}}
+</template>
