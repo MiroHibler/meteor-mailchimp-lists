@@ -127,3 +127,5 @@ mailingLists.list(
 Copyright © 2014 [Miroslav Hibler](http://miro.hibler.me)
 
 _meteor-mailchimp-lists_ is licensed under the [**MIT**](http://miro.mit-license.org) license.
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/MiroHibler/meteor-mailchimp-lists/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
