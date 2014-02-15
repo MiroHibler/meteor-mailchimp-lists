@@ -3,9 +3,9 @@
 	"description"	: "MailChimp Lists - the Meteor way",
 	"homepage"		: "https://github.com/MiroHibler/meteor-mailchimp-lists",
 	"author"		: "Miro Hibler (http://miro.hibler.me)",
-	"version"		: "0.1.0",
+	"version"		: "0.2.0",
 	"git"			: "https://github.com/MiroHibler/meteor-mailchimp-lists.git",
 	"packages"		: {
-		"mailchimp": "0.1.0"
+		"mailchimp": "0.2.0"
 	}
 }

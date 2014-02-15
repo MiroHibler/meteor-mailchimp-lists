@@ -43,6 +43,13 @@ MailChimpOptions.apiKey = "<Your MailChimp API Key>";
 MailChimpOptions.listId = "<ID of your default mailing list>";
 ```
 
+Or in your clients's Meteor.startup():
+
+```javascript
+Session.set( 'MailChimpOptions.apiKey', "<Your MailChimp API Key>" );
+Session.set( 'MailChimpOptions.listId', "<ID of your default mailing list>" );
+```
+
 This way you don't have to pass these parameters on each call.
 
 
@@ -83,6 +90,14 @@ For convenience, there's also a general call (a shortcut to MailChimp.call()):
  * `params` Parameters to pass to the API method.
  * `callback` Callback function for returned data or errors with two parameters. The first one being an error object which is null when no error occured, the second one an object with all information retrieved as long as no error occured.
 
+Also convenience, there are utility methods (**client only!**):
+
+### `lists()`
+**List all lists for a given API Key**
+
+### `refresh()`
+**Refresh list of all lists for a given API Key**
+
 ## Example
 
 ```javascript
@@ -90,6 +105,12 @@ if ( Meteor.isServer ) {
 	// Set it once and reuse many times
 	MailChimpOptions.apiKey = "<Your MailChimp API Key>";
 	MailChimpOptions.listId = "<ID of your default mailing list>";
+}
+
+if ( Meteor.isClient ) {
+	// Set it once and reuse many times
+	Session.set( 'MailChimpOptions.apiKey', "<Your MailChimp API Key>" );
+	Session.set( 'MailChimpOptions.listId', "<ID of your default mailing list>" );
 }
 
 try {
@@ -118,6 +139,9 @@ mailingLists.list(
 ```
 
 ## Changelog
+
+### v0.2.0
+ * On client, MailChimp.call() now reads API Key from session variable 'MailChimpOptions.apiKey' as well
 
 ### v0.1.0
  * Initial release
