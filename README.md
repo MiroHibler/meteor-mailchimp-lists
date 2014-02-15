@@ -25,7 +25,7 @@ _meteor-mailchimp-lists_ also exposes one template you can use out of the box: `
 Install using [Meteorite](https://github.com/oortcloud/meteorite) - Installer & smart package manager for Meteor:
 
 ```sh
-$ mrt add mailchimp-lists // It will install mailchimp package if it\'s not already installed
+$ mrt add mailchimp-lists // It will install mailchimp package if it's not already installed
 ```
 
 Use in your template:
