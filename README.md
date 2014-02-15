@@ -90,7 +90,7 @@ For convenience, there's also a general call (a shortcut to MailChimp.call()):
  * `params` Parameters to pass to the API method.
  * `callback` Callback function for returned data or errors with two parameters. The first one being an error object which is null when no error occured, the second one an object with all information retrieved as long as no error occured.
 
-Also convenience, there are utility methods (**client only!**):
+Also for convenience, there are utility methods (**client only!**):
 
 ### `lists()`
 **List all lists for a given API Key**
