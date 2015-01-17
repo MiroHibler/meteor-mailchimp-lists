@@ -9,3 +9,18 @@
 	{{> MailChimpListsLoader}}
 {{/if}}
 </template>
+
+<template name="MailChimpListsItem">
+	<li id="{{id}}" class="{{itemClass}}">{{name}} <span>{{stats.member_count}}</span> [<a href="{{subscribe_url_short}}" target="_blank">Subscribe</a>]</li>
+</template>
+
+<template name="MailChimpListsRefresh">
+	<a href="#" class="refresh">Refresh</a>
+</template>
+
+<template name="MailChimpListsLoader">
+	<div class="loader">
+		<p>Loading...</p>
+	</div>
+</template>
+
